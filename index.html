@@ -9,41 +9,46 @@
 </head>
 <body>
     <div class="container">
-        <div class="calculator">
+        <div class="calculator-grid">
             <div class="display">
                <div class="history">
-                   <p>history</p>
+                   <p id="h-value">10*10</p>
                </div>
                <div class="result">
-                 <p>result</p>
+                 <p id="r-value">100</p>
                </div>
             </div>
             <div class="keypad">
+                <div class="panel1">
                <button class="operator" id="clear">C</button>
                <button class="operator" id="backspace">CE</button>
                <button class="operator" id="percentage">%</button>
-               <button class="operator" id="/">&#247;</button>
-
+               <button class="operator" id="division">&#247;</button>
+                </div>
+                <div class="panel2">
                <button class="number" id="7">7</button>
                <button class="number" id="8">8</button>
                <button class="number" id="9">9</button>
-               <button class="operator" id="*">&times;</button>
-
+               <button class="operator" id="multi">&times;</button>
+            </div>
+            <div class="panel3">
                <button class="number" id="4">4</button>
                <button class="number" id="5">5</button>
                <button class="number" id="6">6</button>
-               <button class="operator" id="-">-</button>
-
+               <button class="operator" id="sub">-</button>
+            </div>
+            <div class="panel4">
                <button class="number" id="1">1</button>
                <button class="number" id="2">2</button>
                <button class="number" id="3">3</button>
-               <button class="operator" id="+">+</button>
-
-               <button class="empty" id="empty"></button>
-               <button class="number" id="0">0</button>
-               <button class="empty" id="empty"></button>
-               <button class="operator" id="=">=</button>
+               <button class="operator" id="add">+</button>
             </div>
+            <div class="panel5">
+               <button class="operator" id="fl-point">.</button>
+               <button class="number" id="0">0</button>
+               <button class="span-two" id="equal">=</button>
+            </div>
+        </div>
         </div>
     </div>
 </body>
