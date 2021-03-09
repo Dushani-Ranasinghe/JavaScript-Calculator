@@ -1,118 +1,67 @@
- body{
-   margin: 0;
-   background-color: black;
-}
+.title{ 
+    margin-bottom: 10px; 
+    text-align:center; 
+    color:rgb(0, 0, 0); 
+    border-bottom:solid rgb(0, 0, 0) 5px;
+    font-size: x-large; 
+    padding-top: 15px;
+    height: 40px;
+    } 
+
+input[type="button"] 
+    { 
+    background-color:rgb(96, 97, 96); 
+    color: rgb(192, 192, 192); 
+    border: solid black 2px; 
+    border-radius: 7px;
+    border-style: none;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    } 
+
+input[type="text"] 
+    { 
+    background-color:rgb(36, 36, 36); 
+    border: solid black 2px; 
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 30px;
+    border-style: none;
+    color: white;
+    } 
 
 .container{
-    width: max-content;
+    width: 500px;
+    height: 700px;
+    background-color: aquamarine;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 500px;
+}
+.calculator{
     height: max-content;
-    background-color: rgb(49, 47, 47);
-    margin: 20px auto;
-}
-
-.calculator-grid{
-    display: grid;
-    border-radius: 7px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    height: max-content;
     width: max-content;
-    padding: 30px;
-    background-color: honeydew;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 100px 300px ;
-    grid-template-areas: 
-    "display"
-    "keypad";
+    background-color: rgba(255, 255, 255, 0.726);
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
 }
-.display{
-    grid-column: 1/-1;
-    background-color: hotpink;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 35px 65px;
-    grid-template-areas: 
-    "history"
-    "result";
-    border-radius: 7px 7px;
-    word-wrap:break-word;
-    word-break: break-all;
-}
-.history{
-    justify-content: center;
-    text-align: right;
-    padding-right: 4px;
-    font-size: 20px;
-    padding-top: 4px;
-}
-.result{
-    justify-content: center;
-    text-align: right;
-    padding-right: 4px;
-    font-size: 40px;
-}
-p{
-    margin: 0;
-}
-.keypad{
-    align-content: center;
+table{
+    margin: 10px;
     padding: 10px;
-    justify-content: center;
-    display: grid;
-    height: 300px;
-    background-color: indigo;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "panel1"
-    "panel2"
-    "panel3"
-    "panel4"
-    "panel5";
-    border-radius: 0 0 7px 7px;
 }
 
-button{
-    height: 50px;
-    width: 50px;
-    border-radius: 7px;
-    cursor: pointer;
-    font-size: 1rem;
-    border: 0;
-    outline: none;
-}
-button:hover{
-    background-color: lightcoral;
-}
-.span-two{
-    width: 100px;
-}
-#division{
-  background-color: lightcoral;
-}
-#multi{
-    background-color: lightgreen;
-}
-#sub{
-    background-color: lightskyblue;
-}
-#add{
-    background-color: mediumaquamarine;
-}
-#equal{
-    background-color: rgb(165, 50, 50);
-}
-#percentage{
-    background-color: sandybrown;
-}
-#fl-point{
-    background-color: slateblue;
-}
 #clear{
-    background-color: teal;
+    background-color: tomato;
 }
-#backspace{
-    background-color: violet;
+#clear:hover{
+    background-color: red;
 }
