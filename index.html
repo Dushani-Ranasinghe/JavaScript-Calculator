@@ -7,49 +7,48 @@
 </head>
 
 <body> 
-    <div class="container">
-        
+       <div class="container">
       <div class="calculator">
 
-      <div class = title >MY JS CALCULATOR</div> 
+      <div class = title >JS CALCULATOR</div> 
 
     <!-- Crate a table to display calculator display and keypad-->
     <table> 
-       <tr> 
-          <td colspan="3"><input type="text" id="result"/></td> 
-          <!-- call clear() function to clear display -->
-          <td><input type="button" value="c" id="clear" onclick="clear()"/> </td> 
-       </tr> 
-       <tr> 
-          <!-- create button and assign value to them -->
-          <!--call display() function to display values -->
-          <td><input type="button" value="1" onclick="display('1')"/> </td> 
-          <td><input type="button" value="2" onclick="display('2')"/> </td> 
-          <td><input type="button" value="3" onclick="display('3')"/> </td> 
-          <td><input type="button" value="/" onclick="display('/')"/> </td> 
-       </tr> 
-       <tr> 
-          <td><input type="button" value="4" onclick="display('4')"/> </td> 
-          <td><input type="button" value="5" onclick="display('5')"/> </td> 
-          <td><input type="button" value="6" onclick="display('6')"/> </td> 
-          <td><input type="button" value="-" onclick="display('-')"/> </td> 
-       </tr> 
-       <tr> 
-          <td><input type="button" value="7" onclick="display('7')"/> </td> 
-          <td><input type="button" value="8" onclick="display('8')"/> </td> 
-          <td><input type="button" value="9" onclick="display('9')"/> </td> 
-          <td><input type="button" value="+" onclick="display('+')"/> </td> 
-       </tr> 
-       <tr> 
-          <td><input type="button" value="." onclick="display('.')"/> </td> 
-          <td><input type="button" value="0" onclick="display('0')"/> </td> 
-          <!-- calculate() function to evaluate value -->
-          <td><input type="button" value="=" onclick="calculate()"/> </td> 
-          <td><input type="button" value="*" onclick="display('*')"/> </td> 
-       </tr> 
-    </table> 
+      <tr> 
+         <td colspan="3"><input type="text" id="result"/></td> 
+         <!-- clr() function will call clr to clear all value -->
+         <td><input type="button" value="c" id="clear" onclick="clr()"/> </td> 
+      </tr> 
+      <tr> 
+         <!-- create button and assign value to each button -->
+         <!-- dis("1") will call function dis to display value -->
+         <td><input type="button" value="1" id="number" onclick="dis('1')"/> </td> 
+         <td><input type="button" value="2" id="number" onclick="dis('2')"/> </td> 
+         <td><input type="button" value="3" id="number" onclick="dis('3')"/> </td> 
+         <td><input type="button" value="/" id="divide" onclick="dis('/')"/> </td> 
+      </tr> 
+      <tr> 
+         <td><input type="button" value="4" id="number" onclick="dis('4')"/> </td> 
+         <td><input type="button" value="5" id="number" onclick="dis('5')"/> </td> 
+         <td><input type="button" value="6" id="number" onclick="dis('6')"/> </td> 
+         <td><input type="button" value="-"id="subtract" onclick="dis('-')"/> </td> 
+      </tr> 
+      <tr> 
+         <td><input type="button" value="7" id="number" onclick="dis('7')"/> </td> 
+         <td><input type="button" value="8" id="number" onclick="dis('8')"/> </td> 
+         <td><input type="button" value="9" id="number" onclick="dis('9')"/> </td> 
+         <td><input type="button" value="+" id="add" onclick="dis('+')"/> </td> 
+      </tr> 
+      <tr> 
+         <td><input type="button" value="." id="number" onclick="dis('.')"/> </td> 
+         <td><input type="button" value="0" id="number" onclick="dis('0')"/> </td> 
+         <!-- solve function call function solve to evaluate value -->
+         <td><input type="button" value="=" id="equal" onclick="solve()"/> </td> 
+         <td><input type="button" value="*" id="multiply" onclick="dis('*')"/> </td> 
+      </tr> 
+   </table> 
 </div>
-</div>
+</div> 
  </body>
 	
 </html>

@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+   
+}
 .title{ 
     margin-bottom: 10px; 
     text-align:center; 
@@ -6,12 +12,13 @@
     font-size: x-large; 
     padding-top: 15px;
     height: 40px;
+    font-family: fantasy;
     } 
 
 input[type="button"] 
     { 
-    background-color:rgb(96, 97, 96); 
-    color: rgb(192, 192, 192); 
+    background-color:rgb(131, 129, 129); 
+    color: rgb(219, 219, 219); 
     border: solid black 2px; 
     border-radius: 7px;
     border-style: none;
@@ -35,15 +42,15 @@ input[type="text"]
     } 
 
 .container{
-    width: 500px;
-    height: 700px;
-    background-color: aquamarine;
+    width: 400px;
+    background-image: linear-gradient(to right,rgba(41, 41, 41, 0.548),rgba(204, 204, 204, 0.514));
     justify-content: center;
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
     height: 500px;
+    border-radius: 10px;
 }
 .calculator{
     height: max-content;
@@ -51,8 +58,9 @@ input[type="text"]
     background-color: rgba(255, 255, 255, 0.726);
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 15%;
     transform: translateX(-50%);
+    border-radius: 7px;
 }
 table{
     margin: 10px;
@@ -60,8 +68,42 @@ table{
 }
 
 #clear{
-    background-color: tomato;
+    background-color: rgb(210, 30, 30);
 }
 #clear:hover{
-    background-color: red;
+    background-color: rgb(170, 26, 26) ;
+}
+#equal{
+    background-color: rgb(210, 30, 30);
+}
+#equal:hover{
+    background-color:rgb(170, 26, 26) ;
+}
+#divide{
+    background-color: rgb(255, 123, 0);
+}
+#divide:hover{
+    background-color: rgb(201, 98, 2);
+}
+#subtract{
+    background-color: rgb(255, 123, 0);
+}
+#subtract:hover{
+    background-color: rgb(201, 98, 2);
+}
+#add{
+    background-color: rgb(255, 123, 0);
+}
+#add:hover{
+    background-color: rgb(201, 98, 2);
+}
+#multiply{
+    background-color: rgb(255, 123, 0);
+}
+#multiply:hover{
+    background-color: rgb(201, 98, 2);
+}
+
+#number:hover{
+   background-color: rgb(77, 76, 76);
 }
